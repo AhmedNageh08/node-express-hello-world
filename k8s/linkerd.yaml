@@ -1,0 +1,14 @@
+apiVersion: linkerd.io/v1alpha1
+kind: ServiceProfile
+metadata:
+  name: my-app-service
+spec:
+  routes:
+    - condition:
+        pathRegex: /
+      name: "my-app-v1"
+      weight: 50
+    - condition:
+        pathRegex: /
+      name: "my-app-v2"
+      weight: 50
