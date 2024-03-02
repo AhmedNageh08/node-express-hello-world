@@ -1,13 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-service-v2
+  name: my-app-service
 spec:
   selector:
     app: my-app
-    version: v2
+    version: v1
   ports:
     - protocol: TCP
       port: 3000
-      targetPort: 3001
-  type: NodePort
+      targetPort: 3000
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30932
+  endpoints:
+    - ip: 10.244.1.6
+      port: 3000

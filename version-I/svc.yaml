@@ -10,4 +10,8 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-  type: NodePort
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30931
+  endpoints:
+    - ip: 10.244.0.5
+      port: 3000
