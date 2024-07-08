@@ -1,7 +1,7 @@
 # Simple Node Express Hello World App
 
 
-![localhost:3000](/public/images/localhost_3000.png?raw=true "Node & Express")
+![localhost:4000](/public/images/localhost_4000.png?raw=true "Node & Express")
 
 # Steps :
 ```
@@ -10,7 +10,7 @@
   npm install
   npm start
 
-  Go to localhost:3000
+  Go to localhost:4000
 
 ```  
 # Prerequisites : 

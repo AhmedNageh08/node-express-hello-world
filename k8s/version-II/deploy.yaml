@@ -20,4 +20,4 @@ spec:
         - name: my-app
           image: ahmednageh08/node-app:v2
           ports:
-            - containerPort: 3000
+            - containerPort: 4000
